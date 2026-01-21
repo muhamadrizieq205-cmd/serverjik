@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard Monitoring Server</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #121212;
+            color: white;
+        }
+
+        .dashboard {
+            width: 90%;
+            margin: auto;
+        }
+
+        .server-card {
+            background-color: #1e1e1e; /* ❌ MISI 1: SALAH EJA */
+            padding: 15px;
+            margin-bottom: 15px;
+            border-radius: 8px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        /* ❌ MISI 2: KURUNG TUTUP } HILANG */
+        }
+        .icon {
+            font-size: 30px;
+        }
+
+        .status-box {
+            padding: 8px 12px;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        .online {
+            background-color: green;
+        }
+
+        .offline {
+            background-color: red;
+        }
+
+        .maintenance {
+            background-color: orange;
+        }
+
+        .refresh-btn {
+            padding: 10px 20px;
+            border: none;
+            background-color: #2196f3;
+            color: white;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="dashboard">
+    <h1>Dashboard Monitoring Server Sekolah</h1>
+
+    <!-- SERVER 1 -->
+    <div class="server-card">
+        <div>
+            <h3>Server Akademik</h3>
+            <p>IP: 192.168.50.2</p>
+            <p>Uptime: 5 Jam</p>
+        </div>
+        <div class="status-box online">ONLINE</div>
+    </div>
+
+    <!-- SERVER 2 -->
+    <div class="server-card">
+        <div>
+            <h3>Server CBT Ujian</h3>
+            <p>IP: 192.168.50.3</p>
+            <p>Uptime: 5 Jam</p>
+            <!-- ❌ MISI 3: UPTIME HILANG -->
+        </div>
+        <!-- ❌ MISI 4: STATUS SALAH (HARUS OFFLINE) -->
+        <div class="status-box offline">OFFLINE</div>
+    </div>
+
+    <!-- SERVER 3 -->
+<div class="server-card">
+    <div>
+        <h3>NAS File Server</h3>
+        <p>IP: 192.168.50.5</p>
+        <p>Uptime: 5 Jam</p>
+    </div>
+    <div class="status-box maintenance">MAINTENANCE</div>
+</div>
+    <!-- ❌ MISI 5: SERVER NAS FILE SERVER BELUM ADA -->
+
+    <br>
+
+    <!-- ❌ MISI 6: TAG BUTTON BELUM DITUTUP -->
+    <button class="refresh-btn">REFRESH STATUS</button>
+
+
+</div>
+
+</body>
+</html>
